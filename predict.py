@@ -4,14 +4,18 @@ import numpy as np
 import tensorflow as tf
 from tensorflow.keras.preprocessing import image
 
-# import uuid
+from use_gpu import use_gpu
 
 test_dir = 'data/test/'
 model_dir = 'model'
 
+use_gpu()
+
+# num = 0
 # for file in os.listdir(test_dir):
 #     path = test_dir + file
-#     os.rename(path, test_dir + str(uuid.uuid4()) + '.jpg')
+#     os.rename(path, test_dir + str(num) + '.jpg')
+#     num += 1
 
 model = tf.keras.models.load_model(model_dir, compile=True)
 
