@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d366e68-e2e9-415d-be60-e056f3b6f42c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/unsplash_predict.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/saved_model.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/variables/variables.data-00000-of-00001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/variables/variables.index" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/predict.py" beforeDir="false" afterPath="$PROJECT_DIR$/predict.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +47,7 @@
       <recent name="C:\Users\Alvaro\PycharmProjects\cats-vs-dogs\data" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.unsplash_predict">
+  <component name="RunManager" selected="Python.predict">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="cats-vs-dogs" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -121,9 +116,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.unsplash_predict" />
         <item itemvalue="Python.predict" />
         <item itemvalue="Python.main" />
+        <item itemvalue="Python.unsplash_predict" />
       </list>
     </recent_temporary>
   </component>
@@ -141,8 +136,24 @@
       <workItem from="1615125088373" duration="2437000" />
       <workItem from="1615128239895" duration="5177000" />
       <workItem from="1615136372036" duration="9000" />
-      <workItem from="1615460731481" duration="2282000" />
+      <workItem from="1615460731481" duration="5556000" />
+      <workItem from="1615537056676" duration="4058000" />
     </task>
+    <task id="LOCAL-00001" summary="changed model and predict.py">
+      <created>1615463107599</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1615463107599</updated>
+    </task>
+    <task id="LOCAL-00002" summary="changed model">
+      <created>1615468095004</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1615468095004</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,9 +171,14 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="changed model and predict.py" />
+    <MESSAGE value="changed model" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed model" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/cats_vs_dogs$predict.coverage" NAME="predict Coverage Results" MODIFIED="1615462433734" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/cats_vs_dogs$main.coverage" NAME="main Coverage Results" MODIFIED="1615461442574" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/cats_vs_dogs$unsplash_predict.coverage" NAME="unsplash_predict Coverage Results" MODIFIED="1615462892521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cats_vs_dogs$predict.coverage" NAME="predict Coverage Results" MODIFIED="1615552784598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cats_vs_dogs$unsplash_predict.coverage" NAME="unsplash_predict Coverage Results" MODIFIED="1615463034982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/cats_vs_dogs$main.coverage" NAME="main Coverage Results" MODIFIED="1615467231885" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

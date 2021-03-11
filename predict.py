@@ -28,6 +28,8 @@ for file in os.listdir(test_dir):
     images = np.vstack([x])
     classes = model.predict(images, batch_size=10)
 
+    print(classes)
+
     if classes[0] > 0.5:
         print('{} es un perro'.format(file))
     else:
