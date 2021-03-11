@@ -1,8 +1,8 @@
 import os
 
 import tensorflow as tf
-from tensorflow.keras import Model
 from tensorflow.keras import layers
+from tensorflow.keras.models import Sequential
 from tensorflow.keras.optimizers import RMSprop
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
@@ -24,24 +24,21 @@ validation_dogs_dir = os.path.join(validation_dir, 'dogs')
 
 ##########
 
-img_input = layers.Input(shape=(150, 150, 3))
-
-x = layers.Conv2D(16, 3, activation='relu')(img_input)
-x = layers.MaxPooling2D(2)(x)
-x = layers.Conv2D(32, 3, activation='relu')(x)
-x = layers.MaxPooling2D(2)(x)
-x = layers.Conv2D(64, 3, activation='relu')(x)
-x = layers.MaxPooling2D(2)(x)
-x = layers.Conv2D(128, 3, activation='relu')(x)
-x = layers.MaxPooling2D(2)(x)
-x = layers.Dropout(0.2)(x)
-
-x = layers.Flatten()(x)
-x = layers.Dense(512, activation='relu')(x)
-
-output = layers.Dense(1, activation='sigmoid')(x)
-
-model = Model(img_input, output)
+model = Sequential([
+    layers.Input(shape=(150, 150, 3)),
+    layers.Conv2D(filters=16, kernel_size=3, activation='relu'),
+    layers.MaxPooling2D(pool_size=2),
+    layers.Conv2D(filters=32, kernel_size=3, activation='relu'),
+    layers.MaxPooling2D(pool_size=2),
+    layers.Conv2D(filters=64, kernel_size=3, activation='relu'),
+    layers.MaxPooling2D(pool_size=2),
+    layers.Conv2D(filters=128, kernel_size=3, activation='relu'),
+    layers.MaxPooling2D(pool_size=2),
+    layers.Dropout(rate=0.2),
+    layers.Flatten(),
+    layers.Dense(units=512, activation='relu'),
+    layers.Dense(units=1, activation='sigmoid')
+])
 
 ##########
 
